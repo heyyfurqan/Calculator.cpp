@@ -1,0 +1,60 @@
+int x = regNo.length();
+    boolean flag_reg = false;
+    if( x == 11 )
+    {
+      if(regNo.charAt(0) == '2' && regNo.charAt(1) == '0' && regNo.charAt(4) == '-' && regNo.charAt(7) == '-' )
+      {
+        flag_reg =true;
+        
+        for ( int n = 2; n < 4 ; n++)
+        {
+          if( regNo.charAt(n) >= '0' && regNo.charAt(n) <= '9' )
+          {
+            flag_reg = true;
+          }
+          else
+          {
+            flag_reg = false;
+            break;
+          } 
+        }
+        if(flag_reg == true)
+        {
+          for(int n = 5; n < 7; n++)
+          {
+            if( regNo.charAt(n) >= 'A' && regNo.charAt(n)<= 'Z')
+            {
+              flag_reg= true;
+            }
+            else
+            {
+              flag_reg= false;
+              break;
+            }
+            
+          }
+          if(flag_reg == true)
+          {
+            
+            for (int j = 8; j < 11; j++)
+            {
+              if( regNo.charAt(j) >= '0' && regNo.charAt(j) <= '9')
+              {
+                flag_reg = true;
+              }
+              else
+              {
+                flag_reg = false;
+                break;
+              }   
+            }
+          }
+          
+        }
+        
+      }
+      else
+      {
+        flag_reg = false;
+      }
+    }
