@@ -4,3 +4,8 @@ Calculator is a simple calculator written in the C++ along with some extra featu
 
 
 > **Note:** Spammy PRs will not be approved. Similarly, submitting a PR doesn't guarantee it's approval.
+
+# Gotta thank the contributers :D
+<a href="https://github.com/heyyfurqan/calculator.cpp/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=heyyfurqan/calculator.cpp" />
+</a>
